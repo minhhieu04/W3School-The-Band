@@ -10,7 +10,7 @@ html {
     Được hiểu là nếu không có helve.. thì sẽ dùng arial
     sans-serif: chuẩn form. Chỉ sử dụng khi không có form nào trong máy
     */
-
+    scroll-behavior: smooth;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -38,9 +38,43 @@ html {
     text-align: center !important;
 }
 
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    color: #000;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
 .row {
     margin-left: -8px;
     margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .col {
@@ -53,8 +87,12 @@ html {
     width: 33.33333%;
 }
 
-.cold-half {
+.col-half {
     width: 50%;
+}
+
+.col-full {
+    width: 100%;
 }
 
 /* Main */
@@ -196,7 +234,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -284,8 +322,6 @@ html {
 .places-list {
     /* margin top:32, 2 bên đều -8px dưới 0 */
     margin-top: 32px;
-    margin-bottom: 48px;
-    padding-bottom: 48px;
 }
 
 .place-img {
@@ -314,28 +350,64 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
+/* Contact Form */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*=fa-] {
+    width: 30px;
     display: inline-block;
-    margin-top: 15px;
-    border: none;
 }
 
-.place-buy-btn:hover {
-    color: #000;
-    background: #ccc;
+.contact-form .form-control {
+    padding: 10px;
+    border: solid 1px #ccc;
+    width: 100%;
 }
 
+.map-section {
+    width: 100%;
+}
 
 /* Footer */
 
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
 
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0 , 0, 0.6);
+    margin: 0.5px;
+    text-decoration: none;
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0 , 0, 0.4);
+}
+
+#footer .copyright {
+    font-size: 15px;
+    color: rgba(0, 0 , 0, 0.6);
+    margin: 15px 0;
+}
+
+#footer .copyright a {
+    color: rgba(0, 0 , 0, 0.6);
+}
+
+/* Buy Ticket Modal */
 .modal {
     position: fixed;
     top: 0;

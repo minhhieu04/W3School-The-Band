@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3School - The Band</title>
+    <link rel="icon" href="https://lh3.googleusercontent.com/vTxsTzrwt0W8QY2gpdwVRiSq3YknJE08eCITeHeNTZWdpRrsYaQzSpYRubUWz3rT2XPoeax1XfhQ_bd7R0NqmOWSx9FQb0mnrQZJQDDsYi8VLgOIR5dEwc7f1RzfgxYNzKWNbd4CrulNh0XYVFN69VSYUn2j-dQfpQbLhX4NbDV9f4mEOCgxvhhIphAR4BT_JOcOQo_uudpOjls2RDqn29GdofT4r1fterhfT4Icj9paC6ZjQkpFX6c_dkZ0hmlKGRKoBc65iD7XIhTMwEQsr7pyN9jAwFNMX4YH3GiLqNBXFcU2Umx1w9FvNgF8voYHp3oR9D9jwimxER6QoORf_L_lI8ZhVuajLVq0UBSgoQ1SpIGYkW2FJ-6dbCeezbg9g-oV6v52HAkOY5JBgFr0dfxWujQU58dZOJd4GX73FLZTAvZqxIPA1Gi4soDkvIxGBKoAyAd8ElgRzXroKbvorbMieyNJWUVV28JePkew7HC-1RVIYgEY7GS4oEaxarxLcfuuiZ4pzvhl2dwUomTcqRFg4buXw_BcKYyFb58dYaOCCXscGMQONPzEE9B0FwFbqk32yBNYNV_w6Fc_v1u62nq6XIsBAe4meGPHnhQ6D1zJFgsrUKQHhNWvGrCoNXpzFW8skOG9Nex5qcY0LQh_lK3STH-Vhg0o29CWdhh0fuzIRgbUrQqDnK_Nn7VpmcRyK8OgUXKe2723GSNj-qicQMIMG9zCASnJfRttsw3Q_bWRgLAocFHJSvLFVBWc1OA=s820-no?authuser=0" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.css">
@@ -15,19 +16,19 @@
         <div id="header">
             <!-- Begin: vav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="nav-arrow-down fa-solid fa-caret-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,7 +49,7 @@
 
         <div id="content">
             <!-- About section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -66,14 +67,12 @@
                         <p class="member-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="Name"class="member-img">
                     </div>
-                    <!-- Khắc phục vấn đề của float -->
-                    <div class="clear"></div>
                 </div>
             </div>
             
 
             <!-- Tour section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-while">TOUR DATES</h2>
                     <p class="section-sub-heading text-while">Remember to book your tickets!</p>
@@ -90,7 +89,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-third">
@@ -99,7 +98,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div> 
                         <div class="col col-third">
@@ -108,22 +107,65 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket ">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contact section  -->
-            <div class="content-section">
+            <!-- Begin: Contact section  -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
+                        <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                    <!-- placeholder dùng để hiển thị chữ chú thích trong thẻ input -->
+                                    <!-- form-control là từ hay dùng để đặt tên cho class dạng form -->
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class=" btn mt-16 pull-right" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- End: Contact section  -->
+
+            <div class="map-section">
+                 <img src="./assets/img/map/map.jpg" alt="Map">
             </div>
         </div>
 
-        <div id="footer"></div>
+        <!-- Begin: Footer  -->
+        <div id="footer">
+            <div class="social-list">
+                <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-snapchat-square"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+        </div>
+        <!-- End: Footer -->
     </div>
     <div class="modal js-modal">
         <div class="modal-container js-modal-container">
