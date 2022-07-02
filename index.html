@@ -7,6 +7,7 @@
     <title>W3School - The Band</title>
     <link rel="icon" href="https://lh3.googleusercontent.com/vTxsTzrwt0W8QY2gpdwVRiSq3YknJE08eCITeHeNTZWdpRrsYaQzSpYRubUWz3rT2XPoeax1XfhQ_bd7R0NqmOWSx9FQb0mnrQZJQDDsYi8VLgOIR5dEwc7f1RzfgxYNzKWNbd4CrulNh0XYVFN69VSYUn2j-dQfpQbLhX4NbDV9f4mEOCgxvhhIphAR4BT_JOcOQo_uudpOjls2RDqn29GdofT4r1fterhfT4Icj9paC6ZjQkpFX6c_dkZ0hmlKGRKoBc65iD7XIhTMwEQsr7pyN9jAwFNMX4YH3GiLqNBXFcU2Umx1w9FvNgF8voYHp3oR9D9jwimxER6QoORf_L_lI8ZhVuajLVq0UBSgoQ1SpIGYkW2FJ-6dbCeezbg9g-oV6v52HAkOY5JBgFr0dfxWujQU58dZOJd4GX73FLZTAvZqxIPA1Gi4soDkvIxGBKoAyAd8ElgRzXroKbvorbMieyNJWUVV28JePkew7HC-1RVIYgEY7GS4oEaxarxLcfuuiZ4pzvhl2dwUomTcqRFg4buXw_BcKYyFb58dYaOCCXscGMQONPzEE9B0FwFbqk32yBNYNV_w6Fc_v1u62nq6XIsBAe4meGPHnhQ6D1zJFgsrUKQHhNWvGrCoNXpzFW8skOG9Nex5qcY0LQh_lK3STH-Vhg0o29CWdhh0fuzIRgbUrQqDnK_Nn7VpmcRyK8OgUXKe2723GSNj-qicQMIMG9zCASnJfRttsw3Q_bWRgLAocFHJSvLFVBWc1OA=s820-no?authuser=0" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/resposive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.css">
 </head>
@@ -14,7 +15,7 @@
     <!-- Tạo thẻ div tổng -->
     <div id="main">
         <div id="header">
-            <!-- Begin: vav -->
+            <!-- Begin: nav -->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#band">Band</a></li>
@@ -33,11 +34,18 @@
                 </li>
             </ul>
             <!-- End: vav -->
-            <!-- Begin: search button -->
+            
+            <!-- mobile-menu -->
+            <div id="mobile-menu" class="moblie-menu-btn">
+                <i class="menu-icon fa-solid fa-bars"></i>
+            </div>
+
+            <!-- search button -->
+
             <div class="search-btn">
                 <i class="search-icon ti-search"></i>
             </div>
-            <!-- End: search button -->
+
         </div>
 
         <div id="slider">
@@ -55,21 +63,20 @@
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="row members-list">
-                    <div class="col-third col member-item text-center">
+                    <div class="col-third col s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="Name"class="member-img">
                     </div>
-                    <div class="col-third col member-item text-center">
+                    <div class="col-third col s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="Name"class="member-img">
                     </div>
-                    <div class="col-third col member-item text-center">
+                    <div class="col-third col s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/img/band/member1.jpg" alt="Name"class="member-img">
                     </div>
                 </div>
             </div>
-            
 
             <!-- Tour section -->
             <div id="tour" class="tour-section">
@@ -83,31 +90,31 @@
                     </ul>
                     <!-- Places -->
                     <div class="row places-list">
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place2.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width">Buy Tickets</button>
                             </div>
                         </div> 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="./assets/img/places/place3.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="btn js-buy-ticket ">Buy Tickets</button>
+                                <button class="btn js-buy-ticket s-full-width ">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -119,20 +126,20 @@
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
-                        <p><i class="fa-solid fa-phone"></i> Phone: +00 151515</p>
-                        <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                        <p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
                     </div>
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" placeholder="Name" required id="" class="form-control">
                                     <!-- placeholder dùng để hiển thị chữ chú thích trong thẻ input -->
                                     <!-- form-control là từ hay dùng để đặt tên cho class dạng form -->
                                 </div>
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full s-mt-8">
                                     <input type="email" name="" placeholder="Email" required id="" class="form-control">
                                 </div>
                             </div>
@@ -141,7 +148,7 @@
                                     <input type="text" name="" placeholder="Message" required id="" class="form-control">
                                 </div>
                             </div>
-                            <input class=" btn mt-16 pull-right" type="submit" value="SEND">
+                            <input class="btn mt-16 pull-right s-full-width" type="submit" value="SEND">
                         </form>
                     </div>
                 </div>

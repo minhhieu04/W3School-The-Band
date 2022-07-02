@@ -10,8 +10,9 @@ html {
     Được hiểu là nếu không có helve.. thì sẽ dùng arial
     sans-serif: chuẩn form. Chỉ sử dụng khi không có form nào trong máy
     */
+    /* hành vi cuộn mượt */
     scroll-behavior: smooth;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 /* Nguyên tắc code
@@ -46,6 +47,10 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    /* Loại bỏ CSS mặc định của phím btn trên trình duyệt bt */
+    appearance: none;
+    /* Loại bỏ CSS mặc định của phím btn trên trình duyệt Safari */
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -64,6 +69,10 @@ html {
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px; !important
 }
 
 .row {
@@ -177,7 +186,15 @@ html {
     font-size: 18px;
 }
 
+#header .moblie-menu-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: none;
+}
+
 /* CSS search.btn */
+#header .moblie-menu-btn,
 #header .search-btn {
     float: right;    
     /* Đệm giữa chiều ngang */
@@ -190,6 +207,15 @@ html {
     cursor: pointer;
 }
 
+#header .moblie-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .moblie-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -197,12 +223,12 @@ html {
     line-height: 46px;
 }
 
-
 #slider {
     margin-top: 46px;
     padding-top: 50%;
     background: url(../img/slider/slider1.jpg) top center / cover no-repeat;
     position: relative;
+
 }
 
 #slider .text-content {
@@ -213,12 +239,14 @@ html {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    text-shadow: 0 0 1px #000;
 }
 
 #slider .text-heading {
     /* Độ dày */
     font-weight: 500;
     font-size: 24px;
+    text-shadow: 0 0,1px #000;
 }
 
 #slider .text-description {
@@ -234,7 +262,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    /* max-width: 100%; */
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
@@ -271,7 +299,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 47px;
+    margin-top: 31px;
 }
 
 #content .member-name {
@@ -324,7 +352,7 @@ html {
 /* Places */
 .places-list {
     /* margin top:32, 2 bên đều -8px dưới 0 */
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -366,6 +394,20 @@ html {
 .contact-info i[class*=fa-] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #2196F3;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
+.contact-form {
+    font-size: 15px;
 }
 
 .contact-form .form-control {
